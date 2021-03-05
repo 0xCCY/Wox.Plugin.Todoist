@@ -1,4 +1,11 @@
-﻿
+﻿This is a port of the Wox plugin Wox.Plugin.Todoist created by Daniel Bazaco (@DanielBV).
+
+This port is intended to be used for [Flow Launcher](https://github.com/Flow-Launcher/Flow.Launcher). It will not work for Wox.
+
+To download and use this plugin, from [Flow](https://github.com/Flow-Launcher/Flow.Launcher/releases/latest) type `pm install todoist`.
+
+-------------------
+
 # Wox.Plugin.Todoist
 
 Unofficial Wox plugin to use [Todoist's Quick Add](https://get.todoist.help/hc/en-us/articles/115001745265-Task-Quick-Add).
