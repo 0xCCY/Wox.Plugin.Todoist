@@ -1,12 +1,12 @@
 {
-    "ID": "54A6672C06E047A48A7D88C78FA5F13E",
-    "ActionKeyword": "pt",
-    "Name": "Putty",
-    "Description": "Launch Putty Sessions",
-    "Author":"Konstantin Zaitcev, Kai Eichinger (@cH40zLord)",
-    "Version":"2.1.2",
+    "ID": "F71F6EE367D34BAFB681A9287ACF59EB",
+    "ActionKeyword": "t",
+    "Name": "Todoist",
+    "Description": "A plugin to add tasks to todoist.",
+    "Author":"DanielBV",
+    "Version":"2.0.0",
     "Language": "csharp",
-    "Website": "https://github.com/jjw24/Flow.Launcher.Plugin.Putty",
-    "ExecuteFileName": "Flow.Launcher.Plugin.Putty.dll",
-    "IcoPath":"icon.png"
+    "Website": "https://github.com/jjw24/Wox.Plugin.Todoist",
+    "ExecuteFileName": "Wox.Plugin.Todoist.dll",
+    "IcoPath":"images\\icon.png"
 }
