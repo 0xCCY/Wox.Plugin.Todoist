@@ -25,7 +25,7 @@ jobs:
       - run: echo ${{steps.version.outputs.prop}} 
       - name: Build
         run: |
-          dotnet publish 'Wox.Plugin.Todoist/Wox.Plugin.Todoist.csproj' --framework netcoreapp3.1  -c Release -o "Todoist"
+          dotnet publish 'src/Wox.Plugin.Todoist.csproj' --framework netcoreapp3.1  -c Release -o "Todoist"
           7z a -tzip "Wox.Plugin.Todoist.zip" "Todoist/*"
           rm -r "Todoist"
       - name: Publish
