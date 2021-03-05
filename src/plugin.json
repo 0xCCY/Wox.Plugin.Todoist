@@ -1,12 +1,12 @@
 ﻿{
-  "ID": "F71F6EE367D34BAFB681A9287ACF59EB",
-  "ActionKeyword": "t",
-  "Name": "Todoist",
-  "Description": "A plugin to add tasks to todoist.",
-  "Author": "DanielBV",
-  "Version": "2.0.0",
-  "Language": "csharp",
-  "Website": "www.google.com",
-  "IcoPath": "images\\icon.png",
-  "ExecuteFileName": "Wox.Plugin.Todoist.dll"
+   "ID":"F71F6EE367D34BAFB681A9287ACF59EB",
+   "ActionKeyword":"t",
+   "Name":"Todoist",
+   "Description":"A plugin to add tasks to todoist.",
+   "Author":"DanielBV",
+   "Version":"2.0.0",
+   "Language":"csharp",
+   "Website":"www.google.com",
+   "IcoPath":"images\\icon.png",
+   "ExecuteFileName":"Wox.Plugin.Todoist.dll"
 }
