@@ -1,4 +1,4 @@
-using Flow.Launcher.Plugin;
+﻿using Flow.Launcher.Plugin;
 using System;
 using System.Collections.Generic;
 using System.Net;
@@ -42,8 +42,8 @@ namespace Wox.Plugin.Todoist
 
         public List<Result> Query(Query query)
         {
-            String task = query.Search;
-            String api_key = configuration.Api_key; 
+            string task = query.Search;
+            string api_key = configuration.Api_key; 
 
             if (api_key.Trim().Length != 0)
             {
@@ -71,7 +71,7 @@ namespace Wox.Plugin.Todoist
             {
 
                 Title = $"Add the task: '{task}'.",
-                IcoPath = "icon.png",
+                IcoPath = "images\\icon.png",
                 Score = VALID_RESULT_SCORE,
                 Action = _ =>
                 {
@@ -104,7 +104,7 @@ namespace Wox.Plugin.Todoist
             {
 
                 Title = "You must set your todoist API token in the plugin settings before adding tasks",
-                IcoPath = "icon.png",
+                IcoPath = "images\\icon.png",
                 Action = _ =>
                 { return true; },
                 
@@ -117,7 +117,7 @@ namespace Wox.Plugin.Todoist
             {
 
                 Title = $"Failed to create {configuration.FailedRequests.Count} tasks. Click here to try again. You can check the settings for more info.",
-                IcoPath = "icon.png",
+                IcoPath = "images\\icon.png",
                 Score = FAILED_TASK_RESULT_SCORE,
                 Action = _ =>
                 { ResendFailedTasks();
