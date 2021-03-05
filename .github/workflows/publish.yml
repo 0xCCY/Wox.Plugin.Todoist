@@ -1,0 +1,37 @@
+name: Publish Release
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ master ]
+    paths-ignore: 
+      - .github/workflows/*
+
+jobs:
+  publish:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 3.1.301
+      - name: get version
+        id: version
+        uses: notiz-dev/github-action-json-property@release
+        with: 
+          path: 'Wox.Plugin.Todoist/plugin.json'
+          prop_path: 'Version'
+      - run: echo ${{steps.version.outputs.prop}} 
+      - name: Build
+        run: |
+          dotnet publish 'Wox.Plugin.Todoist/Wox.Plugin.Todoist.csproj' --framework netcoreapp3.1  -c Release -o "Todoist"
+          7z a -tzip "Wox.Plugin.Todoist.zip" "Todoist/*"
+          rm -r "Todoist"
+      - name: Publish
+        uses: softprops/action-gh-release@v1
+        with:
+          files: "Wox.Plugin.Todoist.zip"
+          tag_name: "v${{steps.version.outputs.prop}}"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
