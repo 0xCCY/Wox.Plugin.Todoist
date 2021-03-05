@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Net;
 
@@ -10,7 +9,7 @@ namespace Wox.Plugin.Todoist
     
         public HttpStatusCode LastFailedStatusCode { get; set; }
 
-        public List<String> FailedRequests { get; set; }
+        public List<string> FailedRequests { get; set; }
         
         public Settings()
         {
@@ -18,7 +17,7 @@ namespace Wox.Plugin.Todoist
             FailedRequests = new List<string>();
             LastFailedStatusCode = HttpStatusCode.OK;
         }
-        public String api_key { get; set; }
+        public string api_key { get; set; }
 
      
 
