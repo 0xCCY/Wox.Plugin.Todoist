@@ -1,4 +1,4 @@
-﻿
+
 using System.Net;
 using System.Windows;
 using System.Windows.Controls;
@@ -41,9 +41,9 @@ namespace Wox.Plugin.Todoist
         
             if (failedTasks == 0)
             {
-                lblFailedTasks.Visibility = Visibility.Hidden;
-                btnResendRequests.Visibility = Visibility.Hidden;
-                lblFailedStatusCode.Visibility = Visibility.Hidden;
+                lblFailedTasks.Visibility = Visibility.Collapsed;
+                btnResendRequests.Visibility = Visibility.Collapsed;
+                lblFailedStatusCode.Visibility = Visibility.Collapsed;
             }
             else
             {
